@@ -55,7 +55,7 @@ SiRouter *MyCurrentRouter;
 
 //注册
 -(void) registeUser{
-    [manager createUserKey:@"d89a8dc167ac60ad923fda4abcdef" andSecretKey:@"edwardtest" loginKeyExtra:@"d89a8dc167ac60ad923fd675546f" onresult:^(id ret, int code, NSString *msg) {
+    [manager createUserKey:@"d89a8dc167ac60ad923fda4abcdef" andSecretKey:@"d89a8dc167ac60ad923fd675546f" loginKeyExtra:@"edwardtest" onresult:^(id ret, int code, NSString *msg) {
         NSLog(@"createUserKey: ret:%@, code = %d, msg = %@",ret,code,msg);
     }];
 }
